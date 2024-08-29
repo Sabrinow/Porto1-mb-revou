@@ -1,0 +1,362 @@
+body {
+    background-color: rgb(248, 238, 229);
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    align-items: center;
+    background-color: #91230c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 5px;
+    border-bottom: rgb(240, 182, 107) solid;
+    border-width: 5px;
+}
+
+.logo-icon{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 48px;
+    width: 48px;
+    background: rgb(240, 182, 107);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.nav-container{
+    display: flex;
+    color: blanchedalmond;
+    margin: 5px;
+    box-sizing: 100px;
+}
+
+.nav-container a{
+    float: left;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-container a:hover{
+    background-color: blanchedalmond;
+    color: brown;
+}
+
+.nav-item {
+    /*border: 1px solid;*/
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8;
+    border-radius: 8px;
+    vertical-align: middle;
+    height: fit-content;
+}
+
+article {
+    margin: 20px;
+}
+
+#home {
+    font-size: 15pt;
+}
+
+.my-intro{
+    font-size: 12pt;    
+    word-spacing: 1pt;
+    letter-spacing: 0.5pt;
+    font-family: cursive;
+}
+
+.mySlides {
+    display: block;
+    width: 80%;
+    left: 80%;
+
+}
+
+.slideshow-container {
+    margin: 10px;
+    padding-left: 10px;
+    position: relative;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#gambar {
+    width: 400px;
+    height: 300px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    width: auto;
+    padding: 16px;
+    margin-top: auto;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgb(248, 201, 160);
+}
+
+.dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #ECCDB4;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.active, .dot:hover {
+    background-color: brown;
+}
+
+.profile-container{
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 10px auto;
+}
+
+#profile {
+    padding: auto 15px;
+    text-align: center;
+    font-size: 20pt;
+    font-family: georgia;
+}
+
+.profile-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 300;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    border: 1px solid transparent;
+    margin: 2px;
+    padding: 10px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50pt;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.column:hover {
+	cursor: pointer;
+	background-color: rgb(251, 232, 184)
+}
+
+.subprofile {
+    margin: 20px;
+    padding: 2px;
+    font-size: 23pt;
+    color: #91230c;
+}
+
+.isi_subprofile {
+    font-size: 11pt;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1pt;
+}
+
+.section-form {
+    width: fit-content;
+    margin: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+    background-color: #F8C794;
+    border-radius: 2%;
+}
+
+.section-form:hover {
+    box-shadow: 0px 0px 10px 7px #A7727D;
+}
+
+.feedback-form {
+    margin: 5px;
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 2%;
+}
+
+#judulfeed {
+    text-align: center;
+    font-size: 15pt;
+    font-family: georgia;
+    letter-spacing: 3pt;
+    border: 2px solid transparent;
+    border-radius: 2%;
+}
+
+#judulfeed:hover {
+    box-shadow: 0px 0px 10px 7px #DBB5B5;
+    background-color: #ECCDB4;
+    color: #D14D72;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+label, .gender-option {
+    font-size: 18pt;
+    margin-top: 5px;
+    font-family: cursive;
+    color: #37374d;
+}
+
+input[type=text],  input[type=datetime-local], textarea, .subtn {
+    height: 50px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: transparent;
+    border: 1.5px solid transparent;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#nickname, #datetime, #writer-feed {
+    font-family: cursive;
+    letter-spacing: 0.7pt;
+}
+
+#nickname:focus, #datetime:focus {
+    font-family: lucida sans;
+    background-color: #803D3B;
+    color: #ECCDB4;
+    transform: translateX(5px);
+    font-size: 12pt;
+    opacity: 100%;
+    outline: none;
+    box-shadow: 0px 0px 10px 7px #DBB5B5;
+}
+
+.gender {
+    display: none;
+}
+
+.gender-set {
+    margin-top: 9px;
+}
+
+.font-gender {
+    font-size: 45pt;
+    padding: 2px;
+    margin: 10px 25px;
+}
+
+.font-gender:hover {
+    background: #f0dbca;
+    border: 2px solid transparent;
+    transition: 0.1ms ease-in;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px 7px #DBB5B5;
+}
+
+input[type="radio"]:checked + label {
+    background: white;
+    border: 2px solid #f0dbca;
+    transition: 0.3s ease-in-out;
+    border-radius: 10%;
+}
+
+#jarakwdyt {
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+textarea {
+    padding: 12px;
+    height: 5cm;
+    border-radius: 1ch;
+    font-size: 12pt;
+    font-family: fantasy;
+    letter-spacing: 2pt;
+    box-sizing: 5cm;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+textarea:focus {
+    font-family: fantasy;
+    background-color: #fffefb;
+    color: #76234e;
+    transform: translateX(5px);
+    font-size: 12pt;
+    opacity: 100%;
+    outline: none;
+    box-shadow: 0px 0px 10px 2px #F8EDE3;
+}
+
+.submit {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subtn:hover, .subtn:active {
+    box-shadow: 0px 0px 10px 1px #ffffff;
+    background-color: #e5f7b5;
+    color: #7b256e;
+    font-weight: bold;
+    transform: scaleX(1);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+footer {
+    margin: 20px;
+    padding: 5px;
+    font-size: 12pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 2pt;
+}
+
+footer:hover {
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px #c16060;
+    border-radius: 2ch;
+    background-color: rgb(145, 68, 68);
+    color: #efd6eb;
+    font-weight: bold;
+    transform: scaleX(1);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}

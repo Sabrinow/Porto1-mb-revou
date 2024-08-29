@@ -1,0 +1,131 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 20px;
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	font-family: 'Raleway';
+	justify-content: center;
+	background-color: #df9090;
+}
+
+.mainButton {
+	color: #f47d7d;
+	position: relative;
+	border-radius: 10px;
+	background-color: #FFDBB5;
+    padding: 5%;
+}
+
+.mainButton:hover {
+    box-shadow: 0px 0px 10px 7px #c66e7f;
+}
+
+.style_form {
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin-top: 0em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#SignUp {
+    padding-top: 15px;
+    margin: 5%;
+    text-align: center;
+    font-size: 30pt;
+    font-family: "New Amsterdam", sans-serif;
+    color: brown;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: none;
+}
+
+input[type=text]:focus {
+    outline: none;
+    box-shadow: 10px 10px 6px #DEAC80;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 1s ease;
+}
+
+#nickname {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: black;
+    font-size: 15pt;
+}
+
+#nickname:focus {
+    font-family: Verdana;
+    background-color: #571633;
+    color: #ffffff;
+    transform: translateY(10px);
+    font-size: 12pt;
+    opacity: 100%;
+}
+
+#nickname::after, input[type=text]::after {
+    position: absolute;
+    content: "";
+    background-color: #fffdfd;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+label:hover {
+    color: black;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+#anonymous {
+    opacity: 70%;
+}
+
+.submit {
+    padding-bottom: 25%;
+}
+
+.signupbtn {
+    bottom: 40px;
+	right: 45px;
+	position: absolute;
+	box-sizing: border-box;
+	padding: 4px 10px;
+	color: #ffffff;
+	margin-top: 15px;
+	max-width: 600px;
+	text-align: center;
+	border: solid 1px brown;
+	background-color: brown;
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+}
+
+.signupbtn:active, .signupbtn:hover {
+    border: 1px solid white;
+    color: brown;
+    font-size: 11pt;
+    padding: 5px 15px;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+    
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI BOOTCAMP REVOU 19-30 AUGUST 2024</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    
+</head>
+<body>
+    <nav class="nav">
+        <header>
+            <div id="pagetop"></div>
+            <div class="logo-icon"></div>
+        </header>
+        <section class="nav-container">
+            <a href="form.html" class="nav-item">Sign Up</a>
+            <a href="#home" class="nav-item">Home</a> 
+            <a href="#profile" class="nav-item">My Profile</a>
+            <a href="#massage-me" class="nav-item"> Massage Me</a>
+        </section>
+    </nav>
+
+    <main>
+        <article>
+            <header id="home">
+                <h1>Hi, <span id="name">Anon</span>! Welcome To My Web</h1>
+                <script src="script.js"></script>
+            </header>
+            
+            <p class="my-intro">I'm Sabrina Aranika Sudibyo, someone who wants to switch career to IT for better life. This is my first website i've ever made. I hope you enjoyed when using this web. Feel free to give me critique or advice about this website. Thanks ^_^</p>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img name="slideIndex" id="gambar" src="aot.jpeg" alt="aot">
+                </div>
+                <div class="mySlides fade">
+                    <img name="slideIndex" id="gambar" src="bsd.jpeg"  alt="bsd">
+                </div>
+                <div class="mySlides fade">
+                    <img name="slideIndex" id="gambar" src="rimuru.jpeg" alt="rimuru">
+                </div>
+
+                <a href="" class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a href="" class="next" onclick="plusSlides(1)">&#10095</a>
+                
+            </div>
+
+            <br>
+
+            <div class="text-img" style="text-align: center;">
+                <span class="dot" onclick="currentSlides(1)"></span>
+                <span class="dot" onclick="currentSlides(2)"></span>
+                <span class="dot" onclick="currentSlides(3)"></span>
+            </div>
+            
+            <script src="script-revou.js"></script>
+            
+        </article>
+
+        <hr/>
+
+        <section class="profile-container">
+            <header id="profile">
+                <h1>My Profile</h1>
+            </header>
+        
+                <div class="profile-item">
+                    <div class="column">&#127891
+                        <h2 class="subprofile">Education</h2>
+                        <p class="isi_subprofile">Chemistry education graduate in 2024 at Sultan Ageng Tirtayasa University.</p>
+                    </div>
+
+                    <div class="column">&#127926
+                        <h2 class="subprofile">Hobbies</h2>
+                        <p class="isi_subprofile">i don't have spesific hobbies but when i stressed, i'll read books, watch anime, listen music, and touch some grass &#128513. </p>
+                    </div>
+
+                    <div class="column" id="goals">&#127775
+                        <h2 class="subprofile">Goals</h2>
+                        <p class="isi_subprofile">My goals is able to switch career for my future works, IT one of my choice because it looks cool and satisfying to learn it &#128526.</p>
+                    </div>
+                </div>
+        </section>
+        <hr>
+
+        <section class="section-form" id="massage-me">
+            <form action="" class="feedback-form" onsubmit="return validateForm()" name="validateForm"> 
+                <header id="judulfeed">
+                    <h1>Massage Me</h1>
+                </header>
+    
+                <div class="form-container">
+                    <label for="nickname"><b>Name</b></label>
+                    <input type="text" placeholder="Nickname" id="nickname" name="nickname" required><br>
+    
+                    <label for="datetime" id="date"><b>Date</b></label>
+                    <input type="datetime-local" placeholder="DD/MM/YYYY" name="datetime" id="datetime" required><br>
+        
+                    <div class="gender-option" aria-required="true" id="gender"> <b>Gender</b> <br>
+                        <div class="gender-set">
+                            <input type="radio" name="gender" class="gender" id="check-male" required />
+                        <label for="check-male" class="font-gender">&#128587</label>
+                        <input type="radio" name="gender" class="gender" id="check-female" required />
+                        <label for="check-female" class="font-gender">&#129493</label>
+                        <input type="radio" name="gender" class="gender" id="check-other" required />
+                        <label for="check-other" class="font-gender">&#128100</label>
+                        </div>
+                    </div>
+    
+                    <label for="write-feed" id="jarakwdyt"> <b>What Do You Think About This Web?</b></label>
+                    <textarea placeholder="write critique and advice here" name="messages" id="write-feed" required></textarea>
+    
+                </div>
+    
+                <div class="submit">
+                    <button type="submit" class="subtn" id="send">Send</button>
+                </div>
+
+            </form>
+
+            <script src="script-revou.js"></script>
+
+        </section>
+    </main>
+
+    <hr>
+    
+    <footer>
+        <p id="footer">Made by sabrinow on August 2024</p>
+    </footer>
+</body>
+</html>
